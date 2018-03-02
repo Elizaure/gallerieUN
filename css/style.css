@@ -13,9 +13,9 @@ html {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #f5f4f4;
-  font-size: 13px;
-  font-family: 'Arvo', monospace;
+  background: #ffffff;
+  font-size: 20px;
+  font-family: 'Cardo';
 }
 @supports (display: grid) {
   body,
@@ -41,7 +41,7 @@ html {
   display: none;
   padding: 2rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 100px) {
   .section {
     padding: 4rem;
   }
@@ -53,8 +53,9 @@ html {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 60px;
   margin: 0 0 1.5em;
+	color: #5E4B8A;
 }
 
 .grid {
@@ -83,7 +84,6 @@ h1 {
   color: #fff;
   grid-column-start: auto;
   grid-row-start: auto;
-  color: #fff;
   background: url("https://images.unsplash.com/photo-1470124182917-cc6e71b22ecc?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=");
   background-size: cover;
   background-position: center;
@@ -93,7 +93,6 @@ h1 {
   transition: -webkit-transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
-  cursor: pointer;
   counter-increment: item-counter;
 }
 .item:nth-of-type(3n) {
@@ -118,10 +117,6 @@ h1 {
   -webkit-transition: opacity 0.3s ease-in-out;
   transition: opacity 0.3s ease-in-out;
 }
-.item:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
 .item:hover:after {
   opacity: 0;
 }
@@ -134,7 +129,7 @@ h1 {
 .item--full {
   grid-column-end: auto;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 100px) {
   .item--full {
     grid-column: 1/-1;
     grid-row-end: span 2;
@@ -144,11 +139,9 @@ h1 {
   position: relative;
   z-index: 1;
   padding: 15px;
-  color: #444;
   background: #fff;
-  text-transform: lowercase;
   letter-spacing: 1px;
-  color: #828282;
+  color: #5E4B8A;
 }
 .item__details:before {
   content: counter(item-counter);
